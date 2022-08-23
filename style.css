@@ -378,7 +378,6 @@ footer {
     display: none;
 }
 
-/* Скрываем чекбокс */
 #check-burger-menu {
     display: none;
 }
@@ -395,7 +394,6 @@ footer {
     line-height: 40px;
 }
 
-/* Иконка бургера */
 .burger-line {
     position: absolute;
     top: 8px;
@@ -406,7 +404,6 @@ footer {
     transition: 0.5s all;
 }
 
-/* 2 и 3 линии в одной позиции, т.к. они будут образовывать крестик */
 .burger-line2, .burger-line3 {
     top: 18px;
 }
@@ -415,7 +412,6 @@ footer {
     top: 28px;
 }
 
-/* transform: translateY(100%); сдвигает элемент по оси Y на его высоту. Т.о. наш элемент окажется под родительским элементом (был в самом низу) */
 .main-menu {
     display: block;
     position: absolute;
@@ -459,7 +455,6 @@ footer {
 #check-burger-menu:checked ~ .burger-line4 {
     display: none;
 }
-
 
 /* ========================= */
 
