@@ -22,32 +22,62 @@
             </div>
             <nav class="navbar">
                 <div class="nav-background">
+                    <!-- Бургер меню -->
+                    <div class="wrapper">
+                        <!-- Чекбокс и связанный с ним лейбл -->
+                        <input type="checkbox" id="check-burger-menu">
+                        <label for="check-burger-menu" class="burger-menu-label">MENU</label>
+                        <!-- Иконка бургера -->
+                        <div class="burger-line burger-line1"></div>
+                        <div class="burger-line burger-line2"></div>
+                        <div class="burger-line burger-line3"></div>
+                        <div class="burger-line burger-line4"></div>
+                        <!-- Меню -->
+                        <nav class="main-menu">
+                            <a class="burger-a" href="#about">HOME</a>
+                            <a class="burger-a" href="#about">ABOUT</a>
+                            <a class="burger-a" href="#service">SERVICE</a>
+                            <a class="burger-a" href="team.html">TEAM</a>
+                            <a class="burger-a" href="#contact">CONTACT</a>
+                        </nav>
+                    </div>
+
                     <div class="nav-items">
 
                         <div class="nav-item">
                             <a href="#">
-                                <p>HOME</p>
+                                <div>
+                                    <p>HOME</p>
+                                </div>
                             </a>
                         </div>
 
                         <div class="nav-item">
                             <a href="#about">
-                                <p>ABOUT</p>
+                                <div>
+                                    <p>ABOUT</p>
+                                </div>
                             </a>
                         </div>
                         <div class="nav-item">
                             <a href="#service">
-                                <p>SERVICE</p>
+                                <div>
+                                    <p>SERVICE</p>
+                                </div>
                             </a>
                         </div>
                         <div class="nav-item">
                             <a href="team.html" target="_blank">
-                                <p>TEAM</p>
+                                <div>
+                                    <p>TEAM</p>
+                                </div>
                             </a>
                         </div>
                         <div class="nav-item">
                             <a href="#contact">
-                                <p>CONTACT</p>
+                                <div>
+                                    <p>CONTACT</p>
+                                </div>
                             </a>
                         </div>
 
@@ -72,7 +102,14 @@
                     </div>
                     <div class="post__content">
                         <p class="post__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In nobis quisquam totam voluptatibus nam quia amet perferendis, vitae fugit, ea enim sapiente molestias voluptatem aliquid? Harum molestiae ullam soluta expedita?<br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis odit ratione ea nesciunt officiis tempora accusamus aliquam, quae hic, animi non nemo voluptatibus. Cupiditate enim dolorum adipisci dolore commodi harum praesentium aliquid, cumque minus, velit iure atque maxime repudiandae, quam id modi quibusdam facilis animi rerum error eligendi laborum ipsa totam quisquam! Assumenda sequi sit ab blanditiis voluptates! Consequatur, nulla?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In nobis quisquam totam
+                            voluptatibus nam quia amet perferendis, vitae fugit, ea enim sapiente molestias voluptatem
+                            aliquid? Harum molestiae ullam soluta expedita?<br> Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Nobis odit ratione ea nesciunt officiis tempora accusamus aliquam, quae
+                            hic, animi non nemo voluptatibus. Cupiditate enim dolorum adipisci dolore commodi harum
+                            praesentium aliquid, cumque minus, velit iure atque maxime repudiandae, quam id modi
+                            quibusdam facilis animi rerum error eligendi laborum ipsa totam quisquam! Assumenda sequi
+                            sit ab blanditiis voluptates! Consequatur, nulla?
                         </p>
                     </div>
                     <div class="post__footer">
@@ -103,7 +140,14 @@
                     </div>
                     <div class="post__content">
                         <p class="post__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In nobis quisquam totam voluptatibus nam quia amet perferendis, vitae fugit, ea enim sapiente molestias voluptatem aliquid? Harum molestiae ullam soluta expedita?<br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis odit ratione ea nesciunt officiis tempora accusamus aliquam, quae hic, animi non nemo voluptatibus. Cupiditate enim dolorum adipisci dolore commodi harum praesentium aliquid, cumque minus, velit iure atque maxime repudiandae, quam id modi quibusdam facilis animi rerum error eligendi laborum ipsa totam quisquam! Assumenda sequi sit ab blanditiis voluptates! Consequatur, nulla?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In nobis quisquam totam
+                            voluptatibus nam quia amet perferendis, vitae fugit, ea enim sapiente molestias voluptatem
+                            aliquid? Harum molestiae ullam soluta expedita?<br> Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Nobis odit ratione ea nesciunt officiis tempora accusamus aliquam, quae
+                            hic, animi non nemo voluptatibus. Cupiditate enim dolorum adipisci dolore commodi harum
+                            praesentium aliquid, cumque minus, velit iure atque maxime repudiandae, quam id modi
+                            quibusdam facilis animi rerum error eligendi laborum ipsa totam quisquam! Assumenda sequi
+                            sit ab blanditiis voluptates! Consequatur, nulla?
                         </p>
                     </div>
                     <div class="post__footer">
@@ -138,19 +182,20 @@
 
         <footer>
             <div class="footer">
-                <article id="about">
+                <article class="foot-art" id="about">
                     <h3>О нас</h3>
                     <p>
                         Мы команда сплоченных энтузиастов. Все делаем быстро и качественно.
                     </p>
                 </article>
-                <article id="service">
+                <article class="foot-art" id="service">
                     <h3>Услуги</h3>
                     <p>
-                        Мы еще не решили какие услуги будем предоставлять. Но, гарантируем быстрое и качественное выполнение работ.
+                        Мы еще не решили какие услуги будем предоставлять. Но, гарантируем быстрое и качественное
+                        выполнение работ.
                     </p>
                 </article>
-                <article id="contact">
+                <article class="foot-art" id="contact">
                     <h3>Контакты</h3>
                     <a href="tel:+7(888)8888888">+7(888)8888888</a>
                     <a href="mailto: ggg@ggg.gg">ggg@ggg.gg</a>
