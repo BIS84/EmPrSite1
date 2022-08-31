@@ -8,7 +8,6 @@
     <title>Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./bootstrap.min.css">
 </head>
 
 <body>
@@ -24,15 +23,15 @@
                 <div class="nav-background">
                     <!-- Бургер меню -->
                     <div class="wrapper">
-                        
+
                         <input type="checkbox" id="check-burger-menu">
                         <label for="check-burger-menu" class="burger-menu-label">MENU</label>
-                        
+
                         <div class="burger-line burger-line1"></div>
                         <div class="burger-line burger-line2"></div>
                         <div class="burger-line burger-line3"></div>
                         <div class="burger-line burger-line4"></div>
-                        
+
                         <nav class="main-menu">
                             <a class="burger-a" href="#">HOME</a>
                             <a class="burger-a" href="#about">ABOUT</a>
@@ -167,16 +166,20 @@
             </section>
             <aside class="advertising">
                 <div class="adver1">
+                    
                     <p>
                         Здесь могла быть ваша реклама
                     </p>
                 </div>
-                <div class="adver2">
-                    <p>Котедж "под ключ"</p>
+                <div id="adver-img2" class="adver2 adver-img2" style="background-image: url(./img/cottage.png)">
+                    <p>Коттедж "под ключ"</p>
                 </div>
-                <div class="adver3">
+                <div id="adver-img3" class="adver3 adver-img3">
                     <p>Отдых на берегу озера</p>
                 </div>
+                <button id="adver-button" onclick="changeImages()">
+                    Сменить картинки
+                </button>
             </aside>
         </section>
 
@@ -204,7 +207,7 @@
         </footer>
 
     </div>
-
+    <script src="./hello.js"></script>
 </body>
 
 </html>
