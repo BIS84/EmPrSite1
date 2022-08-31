@@ -295,31 +295,15 @@ body {
     border-radius: 10px;
 }
 
-/* .adver-img2 {
+.adver-img2 {
     background-image: url(./img/cottage.png);
-} */
+}
 
 .adver-img3 {
     background-image: url(./img/lake.png);
 }
 
-.adver-img4 {
-    background-image: url(./img/cottage.png);
-}
-
-.adver-img5 {
-    background-image: url(./img/cottage.png);
-}
-
-.adver-img6 {
-    background-image: url(./img/lake.png);
-}
-
-.adver-img7 {
-    background-image: url(./img/lake.png);
-}
-
-.adver2, .adver3, .adver4, .adver5, .adver6, .adver7 {
+.adver2, .adver3 {
     background-size: cover;
     font-size: 20px;
     font-weight: bold;
