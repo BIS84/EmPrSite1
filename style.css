@@ -326,6 +326,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: start;
+    gap: 10px;
     border: none;
 }
 
@@ -347,6 +348,60 @@ body {
     font-family: 'Roboto';
     font-size: 20px;
     font-weight: 400;
+}
+
+.formLogin {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-bl-color-grey);
+}
+
+.formLogin form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -4px;
+}
+
+.formLogin form input {
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--bg-color);
+    background-color: var(--bg-bl-color-grey);
+    border: none;
+    outline:none;
+}
+
+.formLogin form hr {
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--bg-color);
+}
+
+.formLogin form input::-moz-placeholder { color: var(--bg-color); }
+
+.formLogin form input::-webkit-input-placeholder { color: var(--bg-color); }
+
+.loginButton {
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+    grid-column: 2/3;
+    justify-self: center;
+    cursor: pointer;
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 10px;
+}
+
+.loginButton a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: white;
 }
 
 footer {

@@ -13,6 +13,16 @@ if (age < 25) {
     document.getElementById("adver1").innerHTML += `<div class="hi-h3"><h3>Рады видеть Вас, уважаемый ${youName}!</h3></div>`;
 }
 
+document.getElementById("adver1").innerHTML += `<div class="formLogin">
+<form>
+<input class="login" type="text" placeholder="Логин">
+<hr>
+<input class="password" type="password" placeholder="Пароль">
+<hr>
+<button class="loginButton" type="submit"><a href="#coordinates">Авторизоваться</a></button>
+</form>
+</div>`;
+
 const changeImages = () => {
     const styleAdverImg2 = document.getElementById("adver-img2").getAttribute("style");
     if (styleAdverImg2 === "background-image: url(./img/cottage.png)") {
