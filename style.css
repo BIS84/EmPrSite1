@@ -127,22 +127,20 @@ body {
     margin-top: 30px;
     display: grid;
     grid-column: 1/2;
-    grid-template-columns: 2fr 30px 1fr;
+    grid-template-columns: 2fr 0px 1fr;
     gap: 30px;
 }
 
 .content {
-    /* height: 693px; */
     position: relative;
     display: grid;
     grid-column: 1/3;
-    grid-template-areas: 1fr 1fr;
     border: none;
     border-radius: 20px;
     background-color: #EBE8D9;
 }
 
-.content img {
+.cont-img img {
     height: 95%;
     width: 95%;
     position: absolute;
@@ -152,7 +150,7 @@ body {
 
 .bg-img {
     width: 100%;
-    height: inherit;
+    height: 100%;
     display: grid;
     grid-column: 1/2;
     position: absolute;
@@ -169,15 +167,15 @@ body {
 }
 
 .dark {
-    /* width: inherit;
-    height: inherit;
-    display: flex; */
-    /* justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
     align-content: center;
     position: absolute;
     margin-left: 0px;
     margin-top: 0px;
-    border: none; */
+    border: none;
     background-color: rgba(0,106,141,0.8);
     opacity: 0;
 }
@@ -274,10 +272,10 @@ body {
 }
 
 .advertising {
-    height: 617px;
+    height: 682px;
     display: grid;
     grid-column: 3/4;
-    grid-template-columns: 30px 1fr 30px;
+    grid-template-columns: 15px 1fr 15px;
     justify-content: center;
     align-items: center;
     border: none;
@@ -285,7 +283,7 @@ body {
     background-color: #EBE8D9;
 }
 
-.adver1, .adver2, .adver3, .adver4, .adver5, .adver6, .adver7 {
+.adver1, .adver2, .adver3 {
     height: 140px;
     display: grid;
     grid-column: 2/3;
@@ -322,6 +320,33 @@ body {
     color: white;
     border: none;
     border-radius: 10px;
+}
+
+.adver1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border: none;
+}
+
+.hi-h3 {
+    width: 100%;
+    height: 50px;
+    margin-top: -15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: #006A8D;
+}
+
+.hi-h3 h3 {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 400;
 }
 
 footer {
@@ -520,6 +545,20 @@ footer {
         margin-right: 0px;
     }
 
+    .cont-img {
+        width: 100%;
+        height: 300px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont-img img {
+        height: 90%;
+        border-radius: 20px;
+    }
+
     .advertising {
         grid-column: 1/2;
         height: auto;
@@ -538,6 +577,10 @@ footer {
     .adver1, .adver2, .adver3 {
         min-width: 60px;
         max-width: 220px;
+    }
+
+    .hi-h3 {
+        margin-top: 0px;
     }
 
     #about p, #service p {
