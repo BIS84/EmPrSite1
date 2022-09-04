@@ -14,13 +14,15 @@ if (age < 25) {
 }
 
 document.getElementById("adver1").innerHTML += `<div class="formLogin">
-<form>
-<input class="login" type="text" placeholder="Логин">
-<hr>
-<input class="password" type="password" placeholder="Пароль">
-<hr>
-<button class="loginButton" type="submit"><a href="#coordinates">Авторизоваться</a></button>
-</form>
+    <form>
+        <input class="login" type="text" placeholder="Логин">
+        <hr>
+        <input class="password" type="password" placeholder="Пароль">
+        <hr>
+        <button class="loginButton" type="submit">
+            <a href="#">Авторизоваться</a>
+        </button>
+    </form>
 </div>`;
 
 const changeImages = () => {
