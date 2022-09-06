@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Team</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -21,30 +21,28 @@
             </div>
             <nav class="navbar">
                 <div class="nav-background">
-                    <!-- Бургер меню -->
                     <div class="wrapper">
-
+                        <!-- Чекбокс и связанный с ним лейбл -->
                         <input type="checkbox" id="check-burger-menu">
                         <label for="check-burger-menu" class="burger-menu-label">MENU</label>
-
+                        <!-- Иконка бургера -->
                         <div class="burger-line burger-line1"></div>
                         <div class="burger-line burger-line2"></div>
                         <div class="burger-line burger-line3"></div>
                         <div class="burger-line burger-line4"></div>
-
+                        <!-- Меню -->
                         <nav class="main-menu">
-                            <a class="burger-a" href="#">HOME</a>
+                            <a class="burger-a" href="index.html">HOME</a>
                             <a class="burger-a" href="#about">ABOUT</a>
                             <a class="burger-a" href="#service">SERVICE</a>
-                            <a class="burger-a" href="team.html">TEAM</a>
+                            <a class="burger-a" href="#">TEAM</a>
                             <a class="burger-a" href="#contact">CONTACT</a>
                         </nav>
                     </div>
-
                     <div class="nav-items">
 
                         <div class="nav-item">
-                            <a href="#">
+                            <a href="index.html">
                                 <div>
                                     <p>HOME</p>
                                 </div>
@@ -66,7 +64,7 @@
                             </a>
                         </div>
                         <div class="nav-item">
-                            <a href="team.html" target="_blank">
+                            <a href="#">
                                 <div>
                                     <p>TEAM</p>
                                 </div>
@@ -79,19 +77,24 @@
                                 </div>
                             </a>
                         </div>
-
                     </div>
+
                 </div>
             </nav>
         </header>
 
         <section class="main">
-            <section class="content posts" id="posts">
-                
+            <section class="content">
+                <div class="cont-img">
+                    <img src="../img/team.png" alt="Наша команда">
+                </div>
+                <div class="bg-img dark">
+                    <p>Наша дружная команда</p>
+                </div>
             </section>
             <aside class="advertising">
                 <section class="adver1" id="loginPass">
-                    
+
                 </section>
                 <div id="adver-img2" class="adver2 adver-img2">
                     <p>Коттедж "под ключ"</p>
@@ -129,8 +132,8 @@
         </footer>
 
     </div>
-    <script src="./hello.js"></script>
-    <script src="./postObject.js"></script>
-    <script src="./posts.js"></script>
+    <script src="../js/hello.js"></script>
+    <script src="../js/carousel.js"></script>
 </body>
+
 </html>

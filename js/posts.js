@@ -5,7 +5,7 @@ let numberOfPosts = +window.prompt('Сколько постов выводить
 
 let createPosts = () => {
 
-    if (numberOfPosts > 0 && numberOfPosts <= 10) {
+    if (numberOfPosts >= 0 && numberOfPosts <= 10) {
 
         for (let i = 0; i < numberOfPosts; i++) {
 
