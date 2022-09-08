@@ -31,6 +31,11 @@ body {
     grid-template-columns: 1fr;
 }
 
+.logo-clock {
+    display: flex;
+    justify-content: space-between;
+}
+
 .logo-background {
     width: 268px;
     height: 80px;
@@ -63,6 +68,34 @@ body {
     font-size: 20px;
     font-weight: bold;
     color: var(--bg-bl-color);
+}
+
+.alarm-clock {
+    width: 100px;
+    height: 144px;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-image: url(../img/alarmClock.png);
+    background-size: cover;
+    border: none;
+}
+
+.time {
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 63px;
+    margin-left: 11px;
+}
+
+.time p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .navbar {
@@ -350,6 +383,9 @@ body {
 
 .adver2,
 .adver3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-size: cover;
     font-size: 20px;
     font-weight: bold;
@@ -359,15 +395,23 @@ body {
 }
 
 #adver-button {
-    width: 150px;
+    width: 40px;
     height: 40px;
-    grid-column: 2/3;
     justify-self: center;
+    line-height: 20px;
     cursor: pointer;
-    background-color: var(--btn-color);
-    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgba(177, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.3);
     border: none;
-    border-radius: 10px;
+    border-radius: 50%;
+}
+
+#adver-button:hover {
+    background-color: rgba(177, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 .adver1 {

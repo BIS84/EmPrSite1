@@ -48,4 +48,4 @@ let createNewPost = () => {
                 </div>
             </article>
             `
-}
+};

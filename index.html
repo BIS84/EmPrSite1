@@ -14,9 +14,16 @@
     <div class="container">
 
         <header>
-            <div class="logo-background">
-                <div class="logo">
-                    <p>Logo</p>
+            <div class="logo-clock">
+                <div class="logo-background">
+                    <div class="logo">
+                        <p>Logo</p>
+                    </div>
+                </div>
+                <div class="alarm-clock" type="button" onclick="countdown()">
+                    <div class="time" id="time">
+                        <p>00 : 00</p>
+                    </div>
                 </div>
             </div>
             <nav class="navbar">
@@ -66,7 +73,7 @@
                             </a>
                         </div>
                         <div class="nav-item">
-                            <a href="team.html">
+                            <a href="./html/team.html">
                                 <div>
                                     <p>TEAM</p>
                                 </div>
@@ -99,14 +106,23 @@
                     
                 </section>
                 <div id="adver-img2" class="adver2 adver-img2">
+                    <button type="button" id="adver-button" onclick="changeImagesOneLeft()">
+                        &lt;
+                    </button>
                     <p>Коттедж "под ключ"</p>
+                    <button type="button" id="adver-button" onclick="changeImagesOneRight()">
+                        &gt;
+                    </button>
                 </div>
                 <div id="adver-img3" class="adver3 adver-img3">
+                    <button type="button" id="adver-button" onclick="changeImagesTwoLeft()">
+                        &lt;
+                    </button>
                     <p>Отдых на берегу озера</p>
+                    <button type="button" id="adver-button" onclick="changeImagesTwoRight()">
+                        &gt;
+                    </button>
                 </div>
-                <button type="button" id="adver-button" onclick="changeImages()">
-                    Сменить картинки
-                </button>
             </aside>
         </section>
 
@@ -134,10 +150,11 @@
         </footer>
 
     </div>
-    <script src="../js/hello.js"></script>
-    <script src="../js/carousel.js"></script>
-    <script src="../js/postObject.js"></script>
-    <script src="../js/posts.js"></script>
-    <script src="../js/newPost.js"></script>
+    <script src="./js/hello.js"></script>
+    <script src="./js/countdown.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/postObject.js"></script>
+    <script src="./js/posts.js"></script>
+    <script src="./js/newPost.js"></script>
 </body>
 </html>
