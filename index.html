@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
     <div class="container">
 
@@ -93,13 +92,15 @@
         </header>
 
         <section class="main">
-            <section class="content posts" id="posts">
+            <section class="content posts">
+                
+                <h3>Создать новый пост</h3>
                 <form action="#" class="newPost">
-                    <h3>Создать новый пост</h3>
-                    <input id="newTitle" type="text" placeholder="Заголовок"><br>
-                    <textarea id="newContent" type="text" cols="30" rows="10"  placeholder="Текст"></textarea><br>
-                    <button type="submit" id="newPost-button" onclick="createNewPost()">Создать</button>
+                    <input id="newTitle" type="text" placeholder="Заголовок">
+                    <textarea id="newContent" type="text" cols="30" rows="10"  placeholder="Текст"></textarea>
                 </form>
+                <button type="submit" id="newPost-button" onclick="createNewPost()">Создать</button>
+                <div id="posts"></div>
             </section>
             <aside class="advertising">
                 <section class="adver1" id="loginPass">

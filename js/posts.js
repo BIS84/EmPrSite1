@@ -9,7 +9,7 @@ let createPosts = () => {
 
         for (let i = 0; i < numberOfPosts; i++) {
 
-            document.getElementById("posts").innerHTML += `
+            document.getElementById("posts").insertAdjacentHTML("afterbegin", `
             <article class="post">
                 <div class="post__title">
                     <div>
@@ -39,7 +39,7 @@ let createPosts = () => {
                     </div>
                 </div>
             </article>
-            `
+            `)
         }
     } else {
         document.getElementById("posts").innerHTML = `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/O-DphqOtKrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 20px;"></iframe>`

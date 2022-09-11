@@ -1,5 +1,7 @@
 "use strict";
 
+let id = 11;
+
 let createNewPost = () => {
 
     let fullDate = new Date();
@@ -14,10 +16,8 @@ let createNewPost = () => {
     let nowData = `${date}-${month}-${year}`;
     let title = document.getElementById("newTitle").value;
     let content = document.getElementById("newContent").value;
-    let id = 11;
-    
 
-    document.getElementById("posts").innerHTML += `
+    document.getElementById("posts").insertAdjacentHTML("afterbegin",  `
             <article class="post">
                 <div class="post__title">
                     <div>
@@ -47,5 +47,6 @@ let createNewPost = () => {
                     </div>
                 </div>
             </article>
-            `
+            `)
+    id++;
 };
