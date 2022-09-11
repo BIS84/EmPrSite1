@@ -326,7 +326,7 @@ body {
 }
 
 .post__text {
-    white-space: pre-line;
+    white-space: pre-wrap;
 }
 
 .post__footer {
