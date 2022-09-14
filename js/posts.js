@@ -10,12 +10,12 @@ let createPosts = () => {
         for (let i = 0; i < numberOfPosts; i++) {
 
             document.getElementById("posts").insertAdjacentHTML("afterbegin", `
-            <article class="post">
+            <article class="post" id="${posts[i].id}">
                 <div class="post__title">
                     <div>
                         <p class="post__title--p">${posts[i].data} <span class="post__title--span">|</span></p>
                     </div>
-                    <div>
+                    <div hidden>
                         <p>${posts[i].title}</p>
                     </div>
                     <div>
@@ -35,7 +35,8 @@ let createPosts = () => {
                         </div>
                     </div>
                     <div class="post__left">
-                        <button class="post__left-button">Continue Reading</button>
+                        <button class="butt-open">Открыть</button>
+                        <button class="butt-delete" onclick="deletePost(${posts[i].id})">Удалить</button>
                     </div>
                 </div>
             </article>

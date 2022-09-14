@@ -1,24 +1,24 @@
 "use strict";
 
-let id = 11;
+let id = constIdNumber() + 1;
 
-let createNewPost = () => {
+function CreateNewPost() {
 
     let fullDate = new Date();
     let year = fullDate.getFullYear();
     let month = fullDate.getMonth() + 1;
     let date = fullDate.getDate();
 
-    if (month/10 < 1) month = `0${month}`;
+    if (month / 10 < 1) month = `0${month}`;
 
-    if (date/10 < 1) date = `0${date}`;
+    if (date / 10 < 1) date = `0${date}`;
 
     let nowData = `${date}-${month}-${year}`;
     let title = document.getElementById("newTitle").value;
     let content = document.getElementById("newContent").value;
 
-    document.getElementById("posts").insertAdjacentHTML("afterbegin",  `
-            <article class="post">
+    document.getElementById("posts").insertAdjacentHTML("afterbegin", `
+            <article class="post" id="${id}">
                 <div class="post__title">
                     <div>
                         <p class="post__title--p">${nowData} <span class="post__title--span">|</span></p>
@@ -43,7 +43,8 @@ let createNewPost = () => {
                         </div>
                     </div>
                     <div class="post__left">
-                        <button class="post__left-button">Continue Reading</button>
+                        <button class="butt-open">Открыть</button>
+                        <button class="butt-delete" onclick="deletePost(${id})">Удалить</button>
                     </div>
                 </div>
             </article>
