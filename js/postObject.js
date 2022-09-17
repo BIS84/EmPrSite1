@@ -83,10 +83,8 @@ const post10 = {
 
 let posts = [post1, post2, post3, post4, post5, post6, post7, post8, post9, post10];
 
-let constIdNumber = () => {
-    let constIdNumber = posts.length;
-    console.log(constIdNumber);
-    return constIdNumber;
-}
-
-ghj();
+// let constIdNumber = () => {
+//     let constIdNumber = posts.length;
+//     console.log(constIdNumber);
+//     return constIdNumber;
+// }

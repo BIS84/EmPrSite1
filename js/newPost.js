@@ -1,6 +1,7 @@
 "use strict";
 
-let id = constIdNumber() + 1;
+// let id = constIdNumber() + 1;
+let id = posts.length + 1;
 
 function CreateNewPost() {
 
