@@ -1,6 +1,5 @@
 "use strict";
 
-// let id = constIdNumber() + 1;
 let id = posts.length + 1;
 
 function CreateNewPost() {
@@ -14,15 +13,23 @@ function CreateNewPost() {
 
     if (date / 10 < 1) date = `0${date}`;
 
-    let nowData = `${date}-${month}-${year}`;
+    let nowDate = `${date}-${month}-${year}`;
     let title = document.getElementById("newTitle").value;
     let content = document.getElementById("newContent").value;
+
+    posts[id - 1] = {
+        id: id,
+        date: nowDate,
+        title: title,
+        content: content
+    
+    }
 
     document.getElementById("posts").insertAdjacentHTML("afterbegin", `
             <article class="post" id="${id}">
                 <div class="post__title">
                     <div>
-                        <p class="post__title--p">${nowData} <span class="post__title--span">|</span></p>
+                        <p class="post__title--p">${nowDate} <span class="post__title--span">|</span></p>
                     </div>
                     <div>
                         <p>${title}</p>

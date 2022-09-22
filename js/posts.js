@@ -13,7 +13,7 @@ let createPosts = () => {
             <article class="post" id="${posts[i].id}">
                 <div class="post__title">
                     <div>
-                        <p class="post__title--p">${posts[i].data} <span class="post__title--span">|</span></p>
+                        <p class="post__title--p">${posts[i].date} <span class="post__title--span">|</span></p>
                     </div>
                     <div hidden>
                         <p>${posts[i].title}</p>
